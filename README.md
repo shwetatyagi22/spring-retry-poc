@@ -13,7 +13,8 @@ This section provides a quick introduction to getting started with Spring Retry.
 
 ## Maven dependencies
 
-``` <dependency>
+``` 
+<dependency>
     <groupId>org.springframework.retry</groupId>
     <artifactId>spring-retry</artifactId>
     <version>${version}</version>
