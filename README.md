@@ -13,7 +13,7 @@ This section provides a quick introduction to getting started with Spring Retry.
 
 ## Maven dependencies
 
-<dependency>
+``` <dependency>
     <groupId>org.springframework.retry</groupId>
     <artifactId>spring-retry</artifactId>
     <version>${version}</version>
@@ -22,15 +22,17 @@ This section provides a quick introduction to getting started with Spring Retry.
   <groupId>org.springframework</groupId>
   <artifactId>spring-aspects</artifactId>
   <version>${version}</version>
-</dependency>
+</dependency> 
+```
 
 ## Spring Retry Example
 
 Now we will create one interface where we will simulate the retry scenarios.
-
+```
  @Retryable( value = RuntimeException.class, maxAttemptsExpression = "3",
       backoff = @Backoff(delayExpression = "1000"))
   String getResponse();
+  ```
   
 @Retryable – This is the main annotation after @EnableRetry. This annotation tells that if we get RuntimeException from the method, then retry 3 number of times. Also, we are adding a maximum delay for each retry.
 
