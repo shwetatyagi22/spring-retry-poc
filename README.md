@@ -1,17 +1,17 @@
 # spring-retry-poc
 Spring Retry provides the ability to automatically re-invoke a failed operation. This application provides a quick implementation of spring retry functionality.
 
-##Quick Start
+## Quick Start
 This section provides a quick introduction to getting started with Spring Retry.
 
-##Spring retry Annotations
+## Spring retry Annotations
 
 @EnableRetry – to enable spring retry in spring boot project
 @Retryable – to indicate any method to be a candidate of retry
 @Recover – to specify fallback method!
 
 
-##Maven dependencies
+## Maven dependencies
 
 <dependency>
     <groupId>org.springframework.retry</groupId>
@@ -24,7 +24,7 @@ This section provides a quick introduction to getting started with Spring Retry.
   <version>${version}</version>
 </dependency>
 
-##Spring Retry Example
+## Spring Retry Example
 
 Now we will create one interface where we will simulate the retry scenarios.
 
